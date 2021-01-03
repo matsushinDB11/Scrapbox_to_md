@@ -14,7 +14,7 @@ def call_text_array(url, title, is_project_private=False, cookies=None):
         line_array.append(i["text"])
     return line_array
 
-
+# ファイル名に使用できない空白文字を削除する。
 def avoid_special_char(char):
     file_name = re.sub(r'[\s/]', '', char)
     return file_name

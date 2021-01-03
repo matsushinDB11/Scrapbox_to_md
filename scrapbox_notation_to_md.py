@@ -2,6 +2,7 @@ import re
 
 
 # 1ページ分リストで渡す
+# Scrapboxページの記法をMarakdown形式に変換し、1ページ分を配列で返す。
 def scrapbox_to_md(text_array):
     # 箇条書き
     space = re.compile(r'^\s(.*)')
